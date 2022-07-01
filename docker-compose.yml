@@ -1,0 +1,23 @@
+version: "3.8"
+services:
+  metric-service:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/metrics
+    working_dir: /metrics
+    ports:
+      - "8080:8080"
+  postgres:
+    image: postgres
+    container_name: /postgres
+    environment:
+      POSTGRES_DB: "postgres"
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+    ports:
+      - "5432:5432"
+    volumes:
+      - .:/metrics
+

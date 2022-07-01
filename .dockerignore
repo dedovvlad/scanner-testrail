@@ -1,0 +1,7 @@
+git
+.gitignore
+.editorconfig
+Makefile
+Dockerfile
+README.md
+Jenkinsfile

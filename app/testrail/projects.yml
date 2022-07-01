@@ -1,0 +1,11 @@
+project_1:
+  project_id: 0
+  suites:
+    suite_1: 1
+    suite_2: 2
+
+project_2:
+  project_id: 1
+  suites:
+    suite_1: 0
+    suite_2: 1

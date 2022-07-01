@@ -1,0 +1,5 @@
+Generic single-database configuration.
+
+## КАК ВЫПОЛНИТЬ МИГРАЦИЮ И СОЗДАТЬ ТАБЛИЦЫ В БД
+1. Выполнить команду по созданию новой ревизии `alembic revision --autogenerate`
+2. Выполнить миграцию в бд `alembic upgrade head`
